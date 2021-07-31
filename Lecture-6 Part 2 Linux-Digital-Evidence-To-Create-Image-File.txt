@@ -1,0 +1,110 @@
+
+#-----------------------------------------------Digital Evidence To Create Image File-----------------------------------------------#
+
+DC3DD:- Department of Defense Cyber Crime Center (DC3) dd
+	Forensic Image Acquisition and Burning Tool
+
+
+DC3DD Target:-
+------------------------
+==>Copy a media device to an image file
+==>Copy an image file to a storage device
+==>Copy a device to another device
+==>Split output into multiple files
+==>Hash and verify image files
+
+
+Check the disk name:-
+-----------------------------------
+#fdisk -l
+
+
+Create Image file:-
+-------------------------------
+dc3dd if=/dev/sdb1 of=backup.img
+
+Here:-
+	if==> input file
+	of==> output file
+
+
+Create Multiple Image file with log:-
+----------------------------------------------------
+#dc3dd if=/dev/sdb1 of=backup.img of=workcopy-001.img log=backup.txt
+
+
+Burning the img file to another drive:-
+--------------------------------------------------------
+#dc3dd if=backup.img of=/dev/sdb2
+
+
+Backup main file into multiple number segments of img file:-
+-----------------------------------------------------------------------------------------
+#dc3dd if=/dev/sdb1 ofs=backup.img.000 ofsz=25M
+#ls -ls backup.img.0*
+
+
+Backup main file into multiple char segments of img file:-
+-----------------------------------------------------------------------------------
+#dc3dd if=/dev/sdb1 ofs=backup.img.aa ofsz=25M
+#ls -ls backup2.img.*
+
+
+To produce multiple output files with segments:-
+-------------------------------------------------------------------------
+#dc3dd if=/dev/sdb1 of=backup.img of=workcopy-001.img ofs=backup.img.aa ofsz=25M
+
+
+Merge multiple output file into one output file via single img input:-
+--------------------------------------------------------------------------------------------------
+#cat backup.img.0* | dc3dd of=backup.img
+
+
+Compute Hash Value:-
+-----------------------------------
+#dc3dd if=/dev/sdb1 of=backup.img hash=md5 log=backup.txt hlog=backuphash
+
+Note:- backuphash has less amount of data compair to backup.txt file
+
+
+Generate backupfile via hash backup:-
+---------------------------------------------------------
+#dc3dd if=/dev/sdb1 hof=backup.img hash=md5 log=backup.txt
+		<or>
+#dc3dd if=/dev/sdb1 hof=sdb1.img hash=md5 log=evidencelog
+
+
+Creating multi part of hash backup file:-
+-----------------------------------------------------------
+#dc3dd if=/dev/sdb1 hofs=backup.img.000 hash=md5 ofsz=25M log=backup.txt
+
+
+Creating Multiple hash format of the image file:-
+----------------------------------------------------------------------
+#dc3dd if=/dev/sdb1 hof=backup.img hash=md5 hash=sha1 hash=sha256
+
+
+Burning the img file to another drive in hash:-
+--------------------------------------------------------------------
+#dc3dd if=backup.img hof=/dev/sdb2 hash=md5 log=backup.txt
+
+
+Compair entire hash value of img file:-
+---------------------------------------------------------
+#dc3dd if=backup.img fhod=/dev/sdb2 hash=md5 log=backup.txt
+
+
+For remove all the sectors from the drive:-
+---------------------------------------------------------------
+dc3dd wipe=/dev/sdb1
+
+
+Conclusion:-
+--------------------
+==>Acquiring and burning images from media devices
+==>Making multiple, simultaneous copies
+==>Spliting an acquired image into multiple files
+==>Joining multile image file parts into a single file
+==>Hashing and block hashing acquired images
+==>Verifying acquired image input matches output
+==>Creating dc3dd operation log file

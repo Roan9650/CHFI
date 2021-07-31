@@ -1,0 +1,144 @@
+
+#-----------------------------------------------------Investigation of Encryption-----------------------------------------------------#
+
+INTRODUCTION TO CRYPTOGRAPHY
+===============================
+
+Cryptography is a form of Encryption itself, where a readable plain text format is converted into another form which doesn’t leave the value of the plain text as it was before but the basic difference will be, the converted form will be readable by the human beings but will be of no sense. These encryption technique is used mostly for securing and maintaining the privacy of the data.
+
+For this technique user have a Encryption Algorithm and a Key for its Decryption. User will transmit that encrypted message, Receiver will receive. Now for the receiver to understand, he needs to convert it into plain text, cipher, for that he again needs the key and the exact algorithm (decryption).
+
+TERMINOLOGIES 
+ 
+Plain Text  :  A text which is created and readable by the individuals only. like:---ABCD1234!@#$%
+Cipher Text  :  It is the encrypted text, which is converted by applying an algorithm on the plain text.
+Encryption  :  Process of converting a plain text to cipher text.
+Decryption  :  Process of converting a cipher text to plain text.
+
+CIPHERS
+========
+In Cryptography process, Ciphers are those encrypted text which came through the algorithm process of encryption.
+
+Example of Cipher : 
+
+Caesar Cipher is one of the oldest ciphers which came across with the technique of encrypting a plain text into a Cipher Text. Caesar Cipher works by adding or subtracting 3 characters of that particular number. That means if in a Plain Text there is a Character E either it will be transferred it to B and if the character is A it will be transferred to X.
+
+This Cipher algorithm is having some mathematical equations which describe the functionality of a cryptography process.
+
+Example Of Ceaser Cipher:-
+--------------------------------------
+
+KEY :- ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+Encryption Algo:---- Subtraction of 3 char of number
+
+Plain Text:-     RACHIT
+Cipher Text:-  OXZEFQ
+
+Decryption Algo:-----Addition of 3 char of number
+
+Cipher Text:-  OXZEFQ
+Plain text:-      RACHIT
+
+
+Further examples of these Ciphers are Hill Climb and Play Fair Cipher. 
+
+When we talk about the algorithm of these Encryption Algorithms, these are type of standards or modulation  on which the Encryption is going on. Like  AES (Advanced Encryption Standard), DES (Data Encryption Standards), RSA (Rivest Shamir Adleman) etc.
+
+
+KEY SYSTEM IN CRYPTOGRAPHY
+=============================
+A cryptographic key is that bits used of data  which are use by cryptographic algorithms for converting plain text into cipher text or vice versa. 
+There are mainly two Cryptographic Keys. 
+
+ASYMMETRIC KEY / PUBLIC KEY CRYPTOGRAPHY:-
+------------------------------------------------------------------------
+Asymmetric key encryption algorithms called public key algorithms use two different keys but related keys for encryption and decryption and is publicly provided by the Web Server. 
+
+Link:- https://www.youtube.com/watch?v=AQDCe585Lnc
+
+Public Key Cryptography: RSA Encryption Algorithm:-
+-----------------------------------------------------------------------------
+Link:- https://www.youtube.com/watch?v=wXB-V_Keiu8
+
+
+SYMMETRIC KEY / PRIVATE KEY CRYPTOGRAPHY:-
+-----------------------------------------------------------------------
+Symmetric key encryption algorithms use a single symmetric key for both encryption and decryption and is a privately kept.
+
+
+STEGANOGRAPHY
+================
+Steganography is a process in which we basically hide a data inside a data. This is the process in which the data is hidden into the Plain Sight or a Image, Audio or a Video file. This process can also be used along with cryptography as an extra-secure method in which to protect data. 
+One of the most famous and simplest technique used in Steganography is least significant bit technique also known as LSB.
+
+STEPS : 
+$ CMD > copy /b Jelly.jpg+list.txt  steganography.jpg
+
+Here,  /b is used for Binding the 2 files, Copy is used for copying the content of second file to first file.
+
+For using Cryptography with Steganography, we can use “Encipher.it”.
+
+Eg : 
+
+copy /b gokuu.jpg+hashes.txt sanjeev.jpg
+
+
+Hashes:-
+------------
+It converts data into either alpha numeric form or in hex form. But there is a difference between a cipher encryption and a hash. The difference is encrypted text can be reverted and further decrypted, but hashes cannot be reverted. We need to crack the hashes. 
+Hash function is that which takes an input and returns a fixed-size alphanumeric string. The string is called the hash value. Examples MD5 Hash, Base64 Encoding etc.
+
+EG. alphanumeric - scusege67dg367df7fd3fd37f3636d
+
+Link:- https://www.youtube.com/watch?v=2BldESGZKB8
+
+
+Cracking methods for Hashes:-
+----------------------------------------------
+We have to create a dictionary and have to convert every word into the hash of a particular wordlists, and after that we will compare that particular hash. If matches it means that the specific word is found. Hashes are usually uniques.
+
+Passwords & hash functions:-
+Link:- https://www.youtube.com/watch?v=cczlpiiu42M
+
+
+HASHES FORMATS
+================
+1. Base64 encoding
+It is the process of encoding, in which the plain text is converted into the alpha numeric form, but the length of the hash varies as per the length of the plain text. It's a textual encoding of binary data where the resultant text has nothing but letters, numbers and the symbols.
+
+
+2. MD5 (Message Digest 512 bit) 
+It will convert the plain text into hexadecimal text of fixed length. It always creates a unique hash for the plain text and are normally shown in their 32 digit hexadecimal value equivalent. 
+
+
+Digital Signatures:-
+Link:- https://www.youtube.com/watch?v=JR4_RBb8A9Q
+
+
+AUTOMATED TOOL
+================
+
+Hashcat is the world’s fastest and most advanced password recovery tool. It is the fastest hash recovery tool which converts the wordlist into the hashes and then matches those hashes with the specific hash we want to recover. It is pre-installed in kali linux OS.
+Instead of using standard CPU cores, it will use GPU or Graphic card cores.
+
+USAGE :
+$  hashcat -m 0 -a 3 <hashfile in txt> <dictionary|wordlist>
+
+STEPS :
+$  hashcat -m 0 -a 3 /root/Desktop/hash.txt /usr/share/wordlists/rockyou.txt
+$  hashcat -m 0 -a 3 /root/Desktop/hash.txt /usr/share/wordlists/rockyou.txt --force
+
+Here, 
+hashcat is the tool for password recovery
+- m :  hash type
+0  :  MD5
+-a  :  attack mode
+3  :  Brute force attack
+hash.txt  :   file containing hashes to be recovered
+rockyou.txt  :  for brute forcing and comparing
+--force  :   to start forcefully
+
+CUDA CRACKING
+===============
+CUDA Cracking also called GPU Password Cracking is only for NVidia. Cuda is the part of NVidia only, so Graphic cards which are of NVidia can support cuda cracking, which makes the password recovery very fast.

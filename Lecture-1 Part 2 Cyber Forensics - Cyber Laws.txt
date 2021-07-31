@@ -1,0 +1,94 @@
+
+#--------------------------------------------------------------Cyber Laws----------------------------------------------------------#
+
+The Information Technology Act, 2000 (also known as ITA-2000, or the IT Act) is an Act of the Indian Parliament (No 21 of 2000) notified on 17 October 2000. It is the primary law in India dealing with cybercrime and electronic commerce.
+
+Section-43
+========	Damage to computer
+Punishment:---- Imprisonment up to two years, or/and with fine up to ₹100,000
+
+Section-65
+========	Tampering with computer source documents	
+Punishment:---- Imprisonment up to three years, or/and with fine up to ₹200,000
+
+Section-66
+========	Hacking with computer system	
+Punishment:---- Imprisonment up to three years, or/and with fine up to ₹500,000
+
+Section-66A
+=========	Punishment for sending offensive messages through communication service.
+Punishment:---- Imprisonment up to three years, or/and with fine up to ₹100,000
+
+Section-66B
+=========	Receiving stolen computer or communication device	
+Punishment:---- Imprisonment up to three years, or/and with fine up to ₹100,000
+
+Section-66C
+=========	Identity Theft / Using password of another person	
+Punishment:---- Imprisonment up to three years, or/and with fine up to ₹100,000
+
+Section-66D
+=========	Cheating using computer resource. (Phreakers)	
+Punishment:---- Imprisonment up to three years, or/and with fine up to ₹100,000
+
+Section-66E
+=========	Violation of Privacy / Publishing private images of others	
+Punishment:---- Imprisonment up to three years, or/and with fine up to ₹200,000
+
+Section-66F
+=========	Acts of cyberterrorism	
+Punishment:---- Imprisonment up to life.
+
+Section-67
+=========	Publishing information which is obscene in electronic form.	
+Punishment:---- Imprisonment up to five years, or/and with fine up to ₹1,000,000
+
+Section-67A
+=========	Publishing images containing sexual acts	
+Punishment:---- Imprisonment up to seven years, or/and with fine up to ₹1,000,000
+
+Section-67B
+=========	Publishing child porn or predating children online	
+Punishment:---- Imprisonment up to five years, or/and with fine up to ₹1,000,000 on first conviction. 
+Punishment:---- Imprisonment up to seven years, or/and with fine up to ₹1,000,000 on second conviction.
+
+Section-67C
+=========	Failure to maintain records	
+Punishment:---- Imprisonment up to three years, or/and with fine.
+
+Section-68
+=========	Failure/refusal to comply with orders	
+Punishment:---- Imprisonment up to 2 years, or/and with fine up to ₹100,000
+
+Section-69
+=========	Failure/refusal to decrypt data	
+Punishment:---- Imprisonment up to seven years and possible fine.
+
+Section-70
+=========	Securing access or attempting to secure access to a protected system	
+Punishment:---- Imprisonment up to ten years, or/and with fine.
+
+Section-71
+=========	Misrepresentation	
+Punishment:---- Imprisonment up to 2 years, or/and with fine up to ₹100,000
+
+Section-72
+=========	Breach of confidentiality and privacy	
+Punishment:---- Imprisonment up to 2 years, or/and with fine up to ₹100,000
+
+Section-72A
+=========	Disclosure of information in breach of lawful contract	
+Punishment:---- Imprisonment up to 3 years, or/and with fine up to ₹500,000
+
+Section-73
+=========	Publishing electronic signature certificate false in certain particulars. Signature Forgery
+Punishment:---- Imprisonment up to 2 years, or/and with fine up to ₹100,000
+
+Section-74
+=========	Publication for fraudulent purpose	
+Punishment:---- Imprisonment up to 2 years, or/and with fine up to ₹100,000
+
+
+Reference Link:-
+------------------------
+https://en.wikipedia.org/wiki/Information_Technology_Act,_2000#:~:text=The%20Information%20Technology%20Act%2C%202000,with%20cybercrime%20and%20electronic%20commerce.

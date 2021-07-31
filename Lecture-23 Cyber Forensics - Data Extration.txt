@@ -1,0 +1,11 @@
+
+
+Foremost Forensic tool-----
+
+apt install foremost
+insert the pendrive in to the system
+fdisk -l  -----------to check the pendrive 
+copy the disk name
+foremost -h
+foremost -t jpg,png -v -i <input disk path> -o <output path>
+foremost -t jpg,png -v -i /dev/sdb1 -o /root/Desktop/recover

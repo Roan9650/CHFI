@@ -1,0 +1,102 @@
+
+Hard Disk:-
+------------------
+Hard disks are flat, circular plates made of aluminum or glass and coated with a magnetic material. Hard disks for personal computers can store up to several gigabytes (billions of bytes) of information.
+
+
+File System:-
+--------------------
+A file system is a process that manages how and where data on a storage disk, typically a hard disk drive (HDD), is stored, accessed and managed. It is a logical disk component that manages a disk's internal operations as it relates to a computer and is abstract to a human user.
+
+Regardless of type and usage, a disk contains a file system and information about where disk data is stored and how it may be accessed by a user or application. A file system typically manages operations, such as storage management, file naming, directories/folders, metadata, access rules and privileges.
+
+Commonly used file systems include File Allocation Table 32 (FAT 32), New Technology File System (NTFS) and Hierarchical File System (HFS).
+
+Different operating systems support different file systems. Your removable drive should use FAT32 for best compatibility, unless it’s bigger and needs NTFS. Mac-formatted drives use HFS+ and don’t work with Windows. And Linux has its own file systems, too.
+
+
+How file systems work:-
+-------------------------------------
+A file system stores and organizes data and can be thought of as a type of index for all the data contained in a storage device. These devices can include hard drives, optical drives and flash drives.
+
+File systems specify conventions for naming files, including the maximum number of characters in a name, which characters can be used and, in some systems, how long the file name suffix can be. In many file systems, file names are not case sensitive.
+
+Along with the file itself, file systems contain information such as the size of the file, as well as its attributes, location and hierarchy in the directory in the metadata. Metadata can also identify free blocks of available storage on the drive and how much space is available.
+
+
+File systems and the role of metadata:-
+----------------------------------------------------------
+File systems use metadata to store and retrieve files. Examples of metadata tags include:
+
+1. Date created
+2. Date modified
+3. Last date of access
+4. Last backup
+5. User ID of the file creator
+6. Access permissions
+7. File size
+
+Metadata is stored separately from the contents of the file, with many file systems storing the file names in separate directory entries. Some metadata may be kept in the directory, whereas other metadata may be kept in a structure called an inode.
+
+
+File system access:-
+------------------------------
+File systems can also restrict read and write access to a particular group of users. Passwords are the easiest way to do this. Along with controlling who can modify or read files, restricting access can ensure that data modification is controlled and limited.
+
+File permissions such as access or capability control lists can also be used to moderate file system access. These types of mechanisms are useful to prevent access by regular users, but not as effective against outside intruders.
+
+Encrypting files can also prevent user access, but it is focused more on protecting systems from outside attacks. An encryption key can be applied to unencrypted text to encrypt it, or the key can be used to decrypt encrypted text. Only users with the key can access the file.
+
+
+
+Types of file systems:-
+----------------------------------
+There are a number of types of file systems, all with different logical structures and properties, such as speed and size. The type of file system can differ by OS and the needs of that OS. The three most common PC operating systems are Microsoft Windows, Mac OS X and Linux. Mobile OSes include Apple iOS and Google Android.
+
+FAT32:-
+-------------
+File allocation table (FAT) is supported by the Microsoft Windows OS. FAT is considered simple and reliable, and it is modeled after legacy file systems. FAT was designed in 1977 for floppy disks, but was later adapted for hard disks. While efficient and compatible with most current OSes, FAT cannot match the performance and scalability of more modern file systems.
+
+GFS:-
+---------
+Global file system (GFS) is a file system for the Linux OS, and it is a shared disk file system. GFS offers direct access to shared block storage and can be used as a local file system.
+
+NTFS:-
+-----------
+The NT file system -- also known as the New Technology File System (NTFS) -- is the default file system for Windows products from Windows NT 3.1 OS onward. Improvements from the previous FAT file system include better metadata support, performance and use of disk space. NTFS is also supported in the Linux OS through a free, open-source NTFS driver. Mac OSes have read-only support for NTFS.
+
+HFS:-
+-----------
+Hierarchical file system (HFS) was developed for use with Mac operating systems. HFS can also be referred to as Mac OS Standard, and it was succeeded by Mac OS Extended. Originally introduced in 1985 for floppy and hard disks, HFS replaced the original Macintosh file system. It can also be used on CD-ROMs.
+
+UDF:-
+----------
+Universal Disk Format (UDF) is a vendor-neutral file system used on optical media and DVDs. UDF replaces the ISO 9660 file system and is the official file system for DVD video and audio as chosen by the DVD Forum.
+
+Ext2/Ext3/Ext4:-
+-------------------------
+You’ll often see the Ext2, Ext3, and Ext4 file systems on Linux. Ext2 is an older file systems, and it lacks important features like journaling — if the power goes out or a computer crashes while writing to an ext2 drive, data may be lost. Ext3 adds these robustness features at the cost of some speed. Ext4 is more modern and faster — it’s the default file system on most Linux distributions now, and is faster. Windows and Mac don’t support these file systems.
+
+Btrfs:-
+----------
+Btrfs — “better file system” — is a newer Linux file system that’s still in development. It isn’t the default on most Linux distributions at this point, but it will probably replace Ext4 one day. The goal is to provide additional features that allow Linux to scale to larger amounts of storage.
+
+Swap:-
+-------------
+On Linux, the “swap” file system isn’t really a file system. A partition formatted as “swap” can just be used as swap space by the operating system — it’s like the page file on Windows, but requires a dedicated partition.
+
+
+File system vs. DBMS:-
+-----------------------------------
+Like a file system, a database management system (DBMS) efficiently stores data that can be updated and retrieved. The two are not interchangeable, however. While a file system stores unstructured, often unrelated files, a DBMS is used to store and manage structured, related data.
+
+A DBMS creates and defines the restraints for a database. A file system allows access to single files at a time and addresses each file individually.
+
+The centralized structure of a DBMS allows for easier file sharing than a file system and prevents anomalies that can occur when separate changes are made to files in a file system.
+
+
+Diffrence by Security:-
+-----------------------------------
+Security in a file system is determined by the OS, and it can be difficult to maintain over time as files are accessed and authorization is granted to users.
+
+A DBMS keeps security constraints high, relying on password protection, encryption and limited authorization. More security does result in more obstacles when retrieving data, so in terms of general, simple-to-use file storage and retrieval, a file system may be preferred.

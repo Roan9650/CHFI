@@ -1,0 +1,286 @@
+
+#-------------------------------------------------------Cyber Forensics - Methods-----------------------------------------------------------#
+
+
+Challenges Cyber Crime Present to Investigators:-
+----------------------------------------------------------------------
+1. Speed:- 
+	Advancement in technology has boosted the speed with which cyber crimes are committed, whereas investigators require authorization and warrants before starting legal procedure
+
+2. Anonymity:- 
+	Cyber criminals can easily hide their identity by pretend as some other entity or by hiding their IP addresses using proxies
+
+3. Volatile nature of evidence:- 
+	Most of the digital evidence can be easily lost as it is in the form of volatile data such as logs, records, light pulses, radio signals or other means
+
+4. Evidence Size and Complexity:- 
+	Diversity(Change) and distributed nature of digital devices results in increased size of evidence data and complexity
+
+5. Anti-Digital Forensics (ADF):- 
+	Attackers are increasingly using encryption and data hiding techniques to hide digital evidence
+
+6. Global origin and difference in laws:- 
+	The perpetrators can initiate the crime from any part of the world, whereas the authorities have jurisdiction over domestic crimes only
+
+7. Limited legal understanding:- 
+	Many victims are unaware of the law violated during the incident and fail to defend their claim
+
+
+Cyber Crime Investigation:--
+----------------------------------------
+1. The investigation of any crime involves the hardworking collection of clues and forensic evidence with an attention to detail.
+2. It is mandatory that there will be at least one electronic device found during the investigation, be it a computer, cell phone, printer, or fax machine.
+3. The electronic device found may be central to the investigation as it could contain valuable evidence for solving the case.
+4. Therefore, the information contained in the device must be investigated in the proper manner in order to be relied upon in a court of law
+5. Processes such as collection of data, analysis, and presentation differ based on the type of case.
+
+
+Types of cyber crime investigation cases:-
+-----------------------------------------------------------
+				==>> Civil
+				==>> Criminal
+				==>> Administrative
+
+
+Civil Vs. Criminal Investigation:-
+---------------------------------------------
+Civil cases are brought for violation of contracts and lawsuits where a guilty outcome generally results in economic damages to the prosecutor, whereas criminal cases are generally brought by law enforcement agencies in response to a suspected violation of law where a guilty outcome may result in economic damages, imprisonment, or both.
+
+Criminal Investigation:---
+-----------------------------------
+1. Investigators must follow a set of standard forensic processes accepted by law in the respective jurisdiction.
+2. Investigators, under court’s warrant, have the authority to force seize the computing devices.
+3. A formal investigation report is required.
+4. The law enforcement agencies are responsible for collecting and analyzing evidence.
+5. Punishments are harsh and include fine, jail sentence or both.
+6. Standard of proof needs to be very high.
+7. Difficult to capture certain evidence, e.g., GPS device evidences.
+
+Civil Investigation:---
+------------------------------
+1. Investigators try to show some information to the opposite party to support the claims and induce them for settlement.
+2. Searching of the devices is generally based on mutual understanding and provides a wider time window to the opposite party to hide the evidence.
+3. The initial reporting of the evidence is generally informal.----Yachika
+4. The claimant is responsible for the collection and analysis of the evidence.
+5. Punishments include monetary compensation.
+6. Poorly documented or unknown chain-of-custody for evidence.
+7. Sometimes, evidence can be within the third party control.
+
+Administrative Investigation:-
+-------------------------------------------
+1. Administrative investigation generally involves an agency or government performing inquiries to identify facts with reference to its own management and performance.
+2. Administrative investigations are non-criminal in nature and are related to misconduct or activities of an employee that includes but are not limed to:-
+		==> Violation of organization’s policies, rules, or protocols
+		==> Resources misuse or damage or theft
+		==> Threatening or violent behavior
+		==> Improper promotion or pay rises
+
+3. Any violation may result in disciplinary action such as demotion, suspension, revocation, penalties, and dismissal.
+4. For situations like promotions, increments, transfers, etc., administrative investigations can result in positive outcomes, like modifications to existing policies, rules, or protocols.
+
+
+#---------------------Rules Of Forensics Investigation---------------#
+
+1. Limited access and examination of the original evidence
+2. Record changes made to the evidence files
+3. Create a chain of custody document
+4. Set standards for investigating the evidence
+5. Comply with the standards
+6. Hire professionals for analysis of evidence
+7. Evidence should be strictly related to the incident
+8. The evidence should comply with the jurisdiction standards
+9. Document the procedures applied on the evidence
+10. Securely store the evidence
+11. Use recognized tools for analysis
+
+
+Enterprise Theory Of Investigation:--
+----------------------------------------------------
+
+The Enterprise Theory of Investigation (ETI) has become the standard investigative model used by the FBI when conducting investigations against major criminal organizations.
+
+ETI completed a process known as Theory of change, commonly undertaken by organisations with social goals. This process helps to identify all the building blocks required to bring about a given long-term goal and describes the types of interventions that bring about the desired outcomes.
+
+
+
+#---------------------Digital Evidence---------------#
+
+Digital Evidence:-
+----------------------------
+Digital evidence is “any information of probative value that is either stored or transmitted in a digital form”.
+
+Understanding the Digital Evidence as Below:-
+------------------------------------------------------------------
+1. Digital evidence is information stored or transmitted in binary form that may be relied on in court. It can be found on a computer hard drive, a mobile phone, among other places. Digital evidence is commonly associated with electronic crime, or e-crime, such as child pornography or credit card fraud.
+
+2. According to Locard's Exchange Principle, “anyone or anything, entering a crime scene takes something of the scene with them, and leaves something of themselves behind when they leave”
+
+3. Digital evidence is circumstantial and critical in nature, which makes it difficult for a forensic investigator to trace criminal activities
+
+4. Digital information can be gathered while examining digital storage media, monitoring the network traffic, or making duplicate copies of digital data found during forensics investigation
+
+
+Types Of Digital Evidence:-
+---------------------------------------
+1. Volatile Data:-
+		Data that is lost as soon as the device is powered off. 
+		Examples include system time, logged-on user(s), open files, network information, process information, process-to-port mapping, process memory, clipboard contents, service/driver information, command history, etc.
+2. Non-Volatile Data:-
+		Persistent data that is stored on secondary storage devices such as hard disks and memory cards. 
+		Examples include hidden files, slack space, swap file, index.dat files, unallocated clusters, unused partitions, hidden partitions, registry settings, event logs, etc.
+
+
+Characteristics Of Digital Evidence:-
+---------------------------------------------------
+		Digital evidence must have some characteristics to be disclosed in the court of law.
+
+		1. Believable:- Evidence must be clear and understandable by the judges
+		2. Admissible:- Evidence must be related to the fact being proved
+		3. Reliable:- There must be no doubt about the authenticity or veracity of the evidence
+		4. Authentic:- Evidence must be real and related to the incident in a proper way
+		5. Complete:- The evidence must prove the attacker’s actions or his innocence
+
+
+Roles Of Digital Evidence:-
+--------------------------------------
+Examples of cases where digital evidence may assist the forensic investigator in prosecution or defense of a suspect:-
+		
+		1. Identity theft
+		2. Information leakage
+		3. Theft of commercial secrets
+		4. Unauthorized transmission of information
+		5. Malicious attacks on the computer systems them selves
+		6. Use/abuse of the Internet
+		7. Abuse of systems
+		8. Email communication between suspects/conspirators
+		9. Production of false documents and accounts
+		10. Unauthorized encryption/ password protection of documents
+
+
+#-----------------------Sources Of Potential Evidence-----------------#
+
+User Created Files:-
+-----------------------------
+		1. Address books
+		2. Database files
+		3. Media (images, graphics, audio, video, etc.) files
+		4. Documents (text, spreadsheet, presentation, etc.) files
+		5. Internet bookmarks, favorites, etc.
+User Protected Files:-
+------------------------------
+		1. Compressed files
+		2. Misnamed files
+		3. Encrypted files
+		4. Password-protected files
+		5. Hidden files
+		6. Steganography
+Computer Created Files:-
+------------------------------------
+		1. Backup files
+		2. Log files
+		3. Configuration files
+		4. Printer spool files
+		5. Cookies
+		6. Swap files
+		7. System files
+		8. History files
+		9. Temporary files 
+
+
+#-----------------More Source OF Potential Evidence----------------#
+
+Types Of Evidence may found from spot:-
+----------------------------------------------------------
+
+1. Hard Drive:-  Text, picture, video, multimedia, database, and computer program files
+
+2. Thumb Drive:-  Text, graphics, image, and picture files
+
+3. Memory Card:- Event logs, chat logs, text file, image file, picture file, and the Internet browsing history
+
+4. Smart Card | Dongle | Biometric Scanner:- Evidence is found in recognizing or authenticating the information of the card and the user, level of access, configurations, permissions, and in the device itself
+
+5. Answering Machine:-  Voice recordings such as deleted messages, last number called, memo, phone numbers and tapes
+
+6. Digital Camera:- Images, removable cartridges, video, sound, time and date stamp, etc.
+
+7. Handheld Devices:-  Address book, appointment calendars or information, documents, email, handwriting, password, phone book, text messages, and voice messages
+
+8. Modem:- Device itself
+
+9. Local Area Network (LAN) Card/ Network Interface Card (NIC):-  MAC (Media Access Control) address
+
+10. Routers, Hubs, and Switches:- For routers, evidence is found in the configuration files
+			       For hubs and switches, evidence is found on the devices themselves
+
+11. Network Cables and Connectors:- Devices themselves
+
+12. Server:- Computer system
+
+13. Pager:- It contains volatile evidence such as address information, text messages, e-mail, voice messages, and phone numbers
+
+14. Printer:- Evidence is found through usage logs, time and date information, and network identity information, ink cartridges, and time & date stamp
+
+15. Removable Storage Device and Media:- Storage device and media such as tape, CD, DVD, and Blu-ray have the evidence in the devices themselves
+
+16. Scanner:- Evidence is found by looking at the marks on the glass of the scanner
+
+17. Telephones:- Evidence is found through names, phone numbers, caller identification information, appointment information, electronic mail and pages, etc.
+
+18. Copiers:- Documents, user usage logs, time and date stamps, etc.
+
+19. Credit Card Skimmers:- Evidence is found through card expiration date, user’s address, credit card numbers, user’s name, etc.
+
+20. Digital Watches:- Evidence is found through address book, notes, appointment calendars, phone numbers, email, etc.
+
+21. Facsimile (Fax) Machines:- Evidence is found through documents, phone numbers, film cartridge, send or receive logs
+
+22. Global Positioning Systems(GPS):- Evidence is found through previous destinations, way points, routes, travel logs, etc.
+
+
+#-----------------------Rules Of Evidence-------------------#
+
+==>Evidence that is to be presented in the court must conform/adapt with the established rules of evidence.
+==>In investigation process, it is important that the investigator understands the rules of evidence.
+
+Definition:-
+---------------
+==>Rules of evidence govern whether, when, how, and for what purpose the proof of a case may be placed before a trier of fact for consideration
+==>The trier of fact may be a judge or a jury, depending on the purpose of the trial and the choices of the parties
+
+
+Best Evidence Rules:-
+-------------------------------
+==>Best evidence rule is established to prevent any alteration of digital evidence either intentionally or unintentionally
+==>It states that the court only allows the original evidence of a document, photograph or recording at the trial rather than a copy, but the duplicate will be allowed as an evidence under the following conditions:-
+					1. Original evidence destroyed due to fire/flood
+					2. Original evidence destroyed in the normal course of business
+					3. Original evidence in possession of a third party
+
+
+Evidence:-
+----------------
+In legal terms, evidence covers the burden of proof, admissibility, relevance, weight and sufficiency of what should be admitted into the record of a legal proceeding. Evidence -- crucial in both civil and criminal proceedings -- may include blood or hair samples, video surveillance recordings, or witness testimony.
+
+There are four general types of evidence:-
+1. Real evidence (tangible things, such as a weapon)
+2. Demonstrative (a model of what likely happened at a given time and place)
+3. Documentary (a letter, blog post, or other document)
+4. Testimonial (witness testimony)
+
+
+Federal Rules of Evidence:-
+---------------------------------------
+The Federal Rules of Evidence are a set of rules that governs the introduction of evidence at civil and criminal trials in United States federal trial courts. The current rules were initially passed by Congress in 1975, after several years of drafting by the Supreme Court. The rules are straightforward and relatively short, compared to other sets of court rules, such as the Federal Rules of Civil Procedure.
+
+These rules shall be construed to secure fairness in administration, elimination of unjustifiable expense & delay, promotion of growth & development of the law of evidence.
+
+
+Rulings On Evidence:-
+--------------------------------
+		1. Effect of erroneous ruling:- Error may not be predicated upon a ruling which excludes evidence unless a substantial right of the party is affected
+		2. Record of offer and ruling:- The court may add any other or further statement which shows the character of the evidence, the form in which it was offered, the objection made, and the ruling there on. It may direct the making of an offer in question and answer form
+		3. Hearing of jury:- Proceedings shall be conducted, to the extent practicable, so as to prevent inadmissible evidence from being suggested to the jury by any means, such as making statements or offers of proof or asking questions in the hearing of the jury
+		4. Plain error:- Nothing in this rule precludes taking notice of plain errors affecting substantial rights although they were not brought to the attention of the court
+
+

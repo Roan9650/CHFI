@@ -1,0 +1,52 @@
+
+#-------------------------------Digital Forensics : Acquiring an Image--------------------------------#
+
+Disk cloning and disk imaging are two processes that accomplish the same goal: They copy all of a hard drive's contents. ... Disk cloning creates a functional one-to-one copy of a hard drive, while disk imaging creates an archive of a hard drive that can be used to make a one-to-one copy.
+
+Tool Name:- FTK IMAGER
+
+ Step 1:- 
+-------------
+-->Creating a disk image file of a target is the first step of any digital forensic investigation. In any investigation, analysis is not done on the original data storage device (target), but instead on the exact copy taken.
+--> A disk Image is defined as a computer file that contains the contents and structure of a data storage device such as a hard drive, CD drive, phone, tablet, RAM, or USB. The disk image consists of the actual contents of the data storage device, as well as the information necessary to replicate the structure and content layout of the device. This differs from a normal backup in that the integrity of the exact storage structure remains intact, which is pivotal in maintaining the integrity of a forensic investigation.
+-->An image may be taken locally or remotely. In the case that a disk image is taken locally, the data storage target is physically available, such as a USB key or hard drive on an acquired machine. In the case of remote acquisition, the target storage device is not present (i.e. a computer in a suspect’s office at their place of work).
+
+Now, we’ll be making an image of a local drive using FTK Imager. FTK Imager is a software created by the company AccessData for the purpose of creating both local and remote images. However, the free version only allows for local imaging. This software can acquire images of locally available storage devices, such as USB, hard drives, CD drives, or even individual files.
+We’ll create an exact replica of a local drive (F: Source Drive) that will be used in the scope of a digital forensic investigation, later.
+
+
+Steps to launch FTK Imager:-
+------------------------------------------
+1. Launch FTK Imager by clicking on the ‘AccessData FTK Imager’ icon.
+
+2. Click File and look over the various options for creating images. We’ll be using the ‘Create Disk Image’ option. It’s good to note that you can also capture from memory, and image individual items.
+
+3. Click ‘Create Disk Image’. A window will appear. Select the correct drive type for the situation. In this case, we’re imaging a logical drive. Note: it’s possible to select individual folders and CD/DVD. Select logical drive and click Next.
+
+
+Process Steps:-
+------------------------
+-->Select the desired drive in the resulting ‘Select Drive’ window. In this case, the drive we wish to image is ‘F: Source drive. Click Finish.
+
+-->The ‘Create Image’ window will appear. Note that the appropriate Image Source has been selected. Click Add to select the image type and choose the Image Destination.
+
+-->Select the desired image format. We’ll be using dd. dd (disk dump) is the raw image file format. It’s used not only in Windows, but also in Linux. 4. Select ‘Raw (dd)’ and click Next.
+
+-->Select the folder in which the image file will be placed (H: Destination Drive). Also, give the image file a specific name if desired. Click Finish.
+
+-->Note that the image destination has been changed to H:. The disk image will be saved to the Destination Drive. Note: the disk image will be created in raw/dd. Make sure that ‘Verify images after they are created’ is checked – this will automatically create a hash for the image. The hash is used to verify that no changes have been made to the image file. Click Start to create the image file.
+
+-->The image will be created. This may take some time depending on the file size.
+
+-->once the image has been completed. Note that both an MD5 and SHA1 hash have been created and verified. The hash is the fingerprint of the disk image. If the disk image is altered, the hash values will change. Keeping track of these hashes will allow you to continually verify the hash of the image file during your investigative process. Any other investigator should be able to replicate this hash; this maintains integrity in the eyes of the court. 
+
+-->Click on ‘Image Summary’ to view the following results pertaining to the image that has just been created. This information should verify what was entered in the creation process. It will also verify the created hashes. Also, for your reference, this information has been printed out into a text file in the location to which the image file was saved.
+
+-->Note that the image file (Thanks test1) as well as the image summary file from above (Thanks test1.001.txt) have been saved onto the ‘H: Destination Drive’. The .001 extension may be left as is, or can be changed to .dd. The .001 extension is used due to the fact that many times the file to be imaged is very large and must be split into multiple chunks. In that case, you would have Thanks test1.001, Thanks test1.002, etc
+
+
+Conclusion:-
+-------------------
+-->At this point, the disk image has been created. This is essential for analyzing the contents without touching the original drive. we’ll cover viewing the contents of this disk image file.
+
+-->The disk image is completely intact and untouched at this point. It’s imperative that the hashes be recorded.

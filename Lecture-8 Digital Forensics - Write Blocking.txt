@@ -1,0 +1,30 @@
+
+#-------------------------------Digital Forensics - Write Blocking Technique------------------------------#
+
+Tool Name:- Winhex
+
+
+Write Blocking:-
+------------------------
+Write blocking is the act of ensuring that the contents of an evidence drive cannot be modified during the scope of an investigation. It allows acquisition of information on a drive without creating the possibility of accidentally damaging the drive contents. Write blockers do this by allowing read commands to pass but by blocking write commands, hence their name. This can be done one of two ways: with either hardware or software write blockers.
+
+Procedure:-
+------------------
+Once a disk image has been created, hashing and write blocking the image are the immediately pivotal steps to be taken in order to ensure the integrity of the evidence file. Write blocking tools have been written into several of the free software programs we have used or have available, including WinHex and DiskExplorer NTFS. Alternatively, it is possible to do a form of write blocking by simply changing the status of the disk image to read-only.
+
+
+Ways to Write Blocking:-
+------------------------------------
+1. Write block a disk image file using WinHex
+2. Write block a disk image file using file properties and read-only.
+
+Using WinHex:-
+------------------------
+Step 1:- Open image file we created in Winhex
+Step 2:- Go to options and then to Edit Mode.
+Step 3:- Select ‘Read only mode’ and click OK
+
+Using File Properties:-
+---------------------------------
+Step 1:- Right Click on Image & click to properties
+Step 2:- Check the Read-only button & click to apply.

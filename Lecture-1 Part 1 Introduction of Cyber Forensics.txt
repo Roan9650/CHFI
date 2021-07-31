@@ -1,0 +1,109 @@
+
+#-------------------------------------------------------Computer Forensics---------------------------------------------------------#
+				  ------------------------------
+
+Computer forensics is a branch of digital forensic science obtaining to evidence found in computers and digital storage media. The goal of computer forensics is to examine digital media in a forensically sound manner with the aim of identifying, maintaining, recovering, analyzing and presenting facts and opinions about the digital information.
+
+Objective:-
+	1. To track and prosecute perpetrators(Apradhi) of a cyber crime
+	2. To gather evidence of cyber crimes in a forensically sound manner
+	3. To estimate the potential impact of a malicious activity on the victim
+	4. To minimize the tangible and intangible losses to the organization
+	5. To protect the organization from similar incidents in future
+
+
+#---------------------------------------------------------------####-------------------------------------------------------------------#
+
+
+Cyber Crime:-
+---------------------
+
+Cyber crime is defined as any illegal act involving a computing device, network, its systems, or its applications.
+
+		<OR>
+
+Perform any type hacking with the using of internet or electronic devices....
+
+
+Types Of Cyber Crime:-
+---------------------------------
+Cyber crime can be categorized into two types based on the line of attack.
+
+1. Internal Attacks:- Breach of Trust by disgruntled or unsatisfied employees within the organization
+	Example:-
+		1. Spying(Jasoosi)
+		2. Theft of Intellectual Property
+		3. Manipulation of the records
+		4. Trojans horse attack
+
+2. External Attacks:- Attackers hired either by internal or external entities to destroy the organization's reputation
+	Example:-
+		1. SQL attack
+		2. Brute force
+		3. Identity theft
+		4. Phishing/Spoofing
+		5. Denial of Service Attack
+		6. Cyber Defamation(Badanaamee)
+
+
+Other Type of Cyber Crime:--
+----------------------------------------
+1. Computer Fraud
+2. Privacy Violation----- Exposing the data over the internet
+3. Identity Theft----- Stealing information from the system/network
+4. Sharing Copyrighted files/ informtion---- leaking the confidential files
+5. Eletronic Money Transfer------ Net Banking-----Transection Procedure
+6. Electronic Money Laundering--- Convert Black money to white
+7. ATM Fraud----- Cloning of atm card
+8. DOS Attack----- Denial of Service Attack (Router/ Server)
+9. MITM Attack----- Man in the Middle Attack (Capturing packets b/w the transmission channel) 
+10. Spam------ Fake Mailing System
+etc...
+
+
+Cyber Bullying:-
+https://www.youtube.com/watch?v=0Xo8N9qlJtk
+
+
+#---------------------------------------------------------------####-------------------------------------------------------------------#
+
+
+DATA | INFORMATION
+
+Data : Raw Facts
+Information : Processed data or collection of data
+
+
+TYPES OF INFORMATION
+====================
+
+1. Confidentials INformation - Aadhar Cards, Passwords, Birth Certificates, PAN Cards etc.
+2. Financial Information -  Financial Statements, Bank Details, Login Credentials for banking poractices etc.
+3. Health Information - Policies, Diseases etc.
+4. Personal Information - Address, Phone Numbers, DOBs etc.
+
+
+#---------------------------------------------------------------####-------------------------------------------------------------------#
+
+
+Cyber Terrorism
+=================
+Terrorist have found a new way for indulging into disruptive activities through digital space.
+
+			<OR>
+
+Cyber terrorism means to damage information, computer systems and data that result in harm against non-combatant targets.
+
+			<OR>
+
+Cyberterrorism is the use of the Internet to conduct violent acts that result in, or threaten, loss of life or significant bodily harm, in order to achieve political or ideological gains through threat or intimidation.
+
+Ways:- 	Email conversation
+	Telephonic conversation
+	Gaming platform.
+
+CASE 26/11 ---> NATGrid formation
+
+Whatsapp Group Attack:- https://www.youtube.com/watch?v=06WlzZl4jkk&bpctr=1566291253
+
+Link:- https://duo.com/decipher/debunking-myths-do-terrorists-use-game-consoles-to-communicate-with-each-other

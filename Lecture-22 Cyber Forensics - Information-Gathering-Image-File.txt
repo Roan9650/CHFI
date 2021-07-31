@@ -1,0 +1,171 @@
+
+#----------Information Gathering About the Image File---------#
+
+Via using of this Procedure you can get the details like:--
+
+1. Device Name
+2. Device Information
+3. Camera Information
+4. Geo Location
+5. Date & Time of Image Click
+etc.
+
+Tool Name:-
+
+1. Exif-----Meta Information about the Image File
+2. Exiftool----Detailed Meta Information about the Image File
+
+Installation:-
+---------------------
+#apt install exif
+#apt install exiftool
+
+Command:-
+---------------------
+For Exif:-- 
+#exif <image fie name>
+#exif test.jpg
+
+For Exiftool:-
+#exiftool <image file name>
+#exiftool test.jpg
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------#
+
+Windows Based Info via Exif Reader:-
+-------------------------------------------------------
+
+Exif Reader is image file analysis software for Windows. It analyzes and displays the shutter speed, flash condition, focal length, and other image information included in the Exif image format which is supported by almost all the latest digital cameras. Exif image files with an extension of JPG can be treated in the same manner as conventional JPEG files. This software analyzes JPEG files created by digital cameras.
+Exif Reader can analyze some maker-specific formats such as Makernote. This software can display the image information in more details than any other Exif analysis software. For details, refer to the operating environment.
+
+In addition to the Exif format, Exif Reader is applicable to the TIFF/EP format supported by CANON EOS D Series and Kodak digital cameras for professionals, the NSK-TIFF format by the Japan Newspaper Publishers and Editors Association, the TIFF-FX format for FAX by Xerox, and many other special image formats. 
+
+Link to Download:- http://www.takenet.or.jp/~ryuuji/minisoft/exifread/english/download.html
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+Online Metadata Viewer:- 
+-------------------------------------
+Website:- http://exif.regex.info/exif.cgi
+	https://www.metadata2go.com/
+	https://exifinfo.org/
+
+
+Using this website link You can get all the Metadata Details about the image file via pasting the image link in search box.
+
+#------------------------------------------#
+
+Extension Based Image Information:-
+----------------------------------------------------
+Browser Used:- Mozila Firefox
+
+Tool Name:- Exif Viewer
+
+Using of this extension based tool you can get the image metadata on browser.
+
+#------------------------------------------#
+
+Get the location of the Image file:-
+---------------------------------------------- 
+Website:- https://www.pic2map.com/
+
+Using this website you can get the excat location of the image file where the user was clicked the Image... this procedure will work only if the user gave access the gps location while clicking the Image.
+
+This procedure will give you such imformation like:-
+
+1. Camera Information
+2. Date & Time Information
+3. File Information
+4. GPS Information
+5. Location Infomation
+
+#------------------------------------------#
+
+Modification of Meta Data in Image File:-
+-------------------------------------------------------
+Using of this procedure you can change all the Metadata details of the Image File. 
+Tool Name:- Exiftool
+
+Commands:-
+----------------
+
+#exiftool -<tag_name>=<Type New Name> <Image file Name with Extension>
+#exiftool -Copyright=<Type New Name> <Image file Name with Extension>
+#exiftool -Copyright=ENN test.jpg
+
+#------------------------------------------#
+
+Deletion of Meta Details:-
+----------------------------------
+Using of this procedure you can delete the specific meta details or full meta details.
+Tool Name:- Exiftool
+
+Commands:-
+----------------
+In Single Image---
+#exiftool -<tag_name:all>=<*.jpg>
+#exiftool -gps:all= test.jpg
+
+In All Images:----
+#exiftool -gps:all=*.jpg
+
+Full MetaData Deletion:---
+#exiftool -all= test.jpg
+
+#-------------------------------------------#
+
+Remove Meta Data Via Online:---
+------------------------------------------
+Website:- https://www.verexif.com
+
+<<<<<<<<<<<<OR>>>>>>>>>>>>>
+
+Search on google:- remove exif data online
+
+#---------------------------------------------#
+
+Remove Meta Data Via Offline:---
+------------------------------------------
+Using of this kali tool you can completly delete Metadata of the Image File.
+Tool Name:- Imagemagick
+
+Installation:-
+---------------------
+#apt install imagemagick
+
+Commands:-
+--------------------
+#mogrify -strip <Image file name>
+#mogrify -strip test.jpg
+
+For Checking:---
+#exif <Image file name>
+#exif test.jpg
+
+#------------------------------------------------#
+
+Modify & Delete MetaData of Image in Windows:-
+-------------------------------------------------------------------
+
+Using this Method You can Modify & Delete metadata from any Image file.
+
+For Modification:-
+1. Right Click on Selected Image & tab on Details Section
+2. Modify the data what are you wanting
+3. Click to Apply & Save the Changes
+
+For Deletion:-
+1. Right Click on Selected Image & tab on Details Section
+2. Click on Remove Properties & Pensonal Information option
+3. Select the deletions tags & Click on OK Button
+
+#----------------------------------------------#
+
+Modify & Delete MetaData of Image in Windows & Mac via tool:-
+-------------------------------------------------------------------
+
+Using this Method You can Modify & Delete metadata from any Image file.
+Tool Name:- Exif Purge
+
+Download link:- http://www.exifpurge.com/

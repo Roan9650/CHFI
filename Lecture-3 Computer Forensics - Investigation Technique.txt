@@ -1,0 +1,254 @@
+
+
+#-----------------------------------------------------Cyber Forensics Investigation Technique---------------------------------------------------#
+			-----------------------------------------------------------------------------------
+
+
+#--------------------Forensics Readiness-------------------#
+
+Forensic Readiness, defines forensic readiness as: “The achievement of an appropriate level of capability by an organization in order for it to be able to collect, preserve, protect and analyse digital evidence so that this evidence can be effectively used in any legal matters, in disciplinary matters in  court of law.
+Forensic readiness refers to an organization’s ability to make optimal use of digital evidence in a limited period of time and with minimal investigation costs.
+
+Benefits:-
+--------------
+1. Fast and efficient investigation with minimal break-down to the business
+2. Provides security from cybercrimes such as intellectual property theft, fraud, or extortion
+3. Offers structured storage of evidence that reduces expense and time of an investigation
+4. Improves law enforcement interface
+5. Easy identification of evidence related to the potential crimes
+6. Proper usage of evidence for positive outcome of any legal charge
+7. Helps the organization use the digital evidence in its own defense
+8. Blocks the attackers from covering their tracks
+9. Limits the cost of regulatory or legal requirements for disclosure of data
+10. Avoid similar attacks in the future
+
+
+Forensics Readiness Planning:-
+-------------------------------------------
+Forensics readiness planning refers to a set of processes required to achieve and maintain forensics readiness.
+
+==>Potential evidence required for an incident
+==>Determine the source of the evidence
+==>Define a policy for pathway to legally extract electronic evidence with minimal break
+==>Policy for Securely handling and storing the collected evidence
+==>Identify if the incident requires full or formal investigation
+==>Train the staff to handle the incident and preserve the evidence
+==>Create a special process for documenting the procedure
+==>Establish a legal advisory board to guide the investigation process
+
+
+Importance of Computer Forensics Process:-
+--------------------------------------------------------------
+The rapid increase of cyber crimes has led to the development of various laws and standards that define cyber crimes, digital evidence, search and seizure methodology, evidence recovery and the investigation process
+
+The investigators must follow a forensics investigation process that comply to local laws and established precedents. Any deviation from the standard process may endanger the complete investigation
+
+As digital evidence are fragile(Critical) in nature, a proper and thorough forensic investigation process that ensures the integrity of evidence is critical to prove a case in a court of law
+
+The investigators must follow a repeatable and well documented set of steps such that every iteration of analysis provides the same findings, or else the findings of the investigation can be invalidated during the cross examination in a court of law
+
+
+Phases Of Computer Forensics Investigation:-
+-----------------------------------------------------------------
+					1. Pre-Investigation Phase
+					2. Investigation Phase
+					3. Post-Investigation Phase
+
+Pre-Investigation Phase:- 
+-------------------------------------
+1. Deals with tasks to be performed prior to the commencement of actual investigation
+2. Involves setting up a computer forensics lab, building a forensics workstation, developing an investigation toolkit, setting up an investigation team, getting approval from the relevant authority, etc.
+
+Investigation Phase:-
+------------------------------
+1. Considered as the main phase of the computer forensics investigation process
+2. Involves acquisition, preservation, and analysis of evidentiary data to identify the source of crime and the culprit behind it
+
+Post-Investigation Phase:-
+-------------------------------------
+1. Deals with the documentation of all the actions undertaken and findings during the course of an investigation
+2. Ensures that the report is well explained to the target audience, and provides adequate and acceptable evidence
+
+
+#--------------------------------------------------------------------------####-----------------------------------------------------------------------------#
+
+
+Setting Up a Computer Forensics Lab:-
+-------------------------------------------------------
+1. A Computer Forensics Lab (CFL) is a location designated for conducting computer-based investigation with regard to the collected evidence
+
+2. The lab houses instruments, software and hardware tools, suspect media & forensic workstations required to conduct the investigation
+
+Steps To Setting up a forensics lab:-
+---------------------------------------------------
+1. Planning & budgeting
+2. Physical location & structural design considerations
+3. WorkArea Consideration
+4. Physical security recommendations
+5. Human resource considerations
+6. Forensics lab licensing
+
+Planning & Budgeting:-
+---------------------------------
+1. Types of investigation to be conducted, based on the crime statistics of the previous year and the expected trend
+2. Number of cases expected
+3. Numbers of investigators/examiners to be involved and their required training
+4. Forensic and non-forensic workstations’ requirement
+5. Space occupied, equipment required, UPS & power supplies, etc.
+6. Necessary software and hardware
+7. Reference materials
+8. Safe locker to store and secure original evidence
+9. LAN and Internet connectivity
+10. Storage shelves for unused equipment
+
+
+Physical Location and Structural Design Considerations:-
+--------------------------------------------------------------------------------
+1. Physical location needs:- 
+		==>Site of the lab
+		==>Access to emergency services
+		==>Physical milieu of the lab
+		==>Design of parking facility
+2. Communication Needs:-
+		==>Dedicated Internet and communication lines
+		==>Multiple backups for communication lines in case of emergencies
+		==>A dedicated network
+3. Environmental needs:-
+		==>Appropriate room size
+		==>Good ventilation & air-conditioning
+4. Electrical Needs:-
+		==>Good electricity supply
+		==>Must have emergency power & lighting systems
+
+
+Work Area Considerations:-
+----------------------------------------
+1. Work Area of a Computer Forensics Lab:-
+		==>An ideal lab consists of two forensic workstations & one ordinary workstation with Internet connectivity
+		==>Forensics workstations vary according to the types of cases & processes handled in the lab
+		==>The work area should have ample space for case discussions to take place among investigators
+2. Ambience of a Computer Forensics Lab:-
+		==>Investigators spend long hours in a forensics lab, so it is important to keep the lab environment comfortable
+		==>The height of ceilings, walls, flooring & so on contribute to the ambience of a forensics lab
+		==>Lighting, room temperature & communications form an important factor while considering the ambience of a 			computer forensics lab
+
+
+
+#--------------------------------------------------------------------------####-----------------------------------------------------------------------------#
+
+
+
+#------------------------Computer Forensics as Part of Incident Response Plan---------------------#
+
+Incident response is a process of responding to incidents that may have occurred due to security breach in the system or network.
+
+==>Minimizes the damage and reduces recovery time and costs
+==>Incident response professional includes identifying (how breach occurred, how to locate the method of breach & how to reduce the breach
+==>Finding & analyzing the evidence to determine the culprit(apradhi) behind the incident via legally.
+==>Organizations include incident response plan so that help to track and prosecute culprit who is responsible befind that incident.
+
+
+
+
+#--------------------------------Need for Forensic Investigator---------------------------#
+
+Cyber Crime Investigation:-
+----------------------------------------
+			A forensic investigator, by virtue of his or her skills and experience, helps organizations and law enforcement agencies 	investigate and prosecute the perpetrators of cyber crimes
+
+Sound Evidence Handling:-
+---------------------------------------
+			If a technically inexperienced person examines the computer involved in the crime, it will almost certainly result in rendering any evidence found inadmissible in a court of law
+
+Incident Handling & Response:-
+--------------------------------------------
+			Forensic investigators help organizations to maintain forensics readiness, and implement effective incident handling and response team.
+
+
+
+#-----------------------Roles and Responsibilities of Forensics Investigator----------------------#
+
+A forensic investigator performs the following tasks:-
+---------------------------------------------------------------------------
+
+1. Determines damage during the crime
+2. Recovers data of investigative value from computers
+3. Gathers evidence in a forensically sound manner
+4. Ensures that evidence is not damaged in any way
+5. Creates an image of the original evidence without tampering with it &  to maintain the original evidence’s integrity
+6. It is required that the forensic investigator submit the evidence, describing the procedure involved in its discovery.
+7. Reconstructs the damaged disks or other storage devices, and uncovers the hidden information from the computer
+8. Analyzes the evidence and find out the data
+9. Preparing the proper analysis report
+10. Updates the organization about various attack methods and data recovery techniques, and maintains a record of them regularly
+11. Addresses the issue in a court of law and try attempts to win the case being testifying witness in court
+
+
+What makes a Good Computer Forensics Investigator?
+----------------------------------------------------------------------------
+
+==>Better Interviewing skills for gathering as much as possible information about the case from the client or victim, witnesses, and suspects
+==>Researching skills to understand the background activities from the client or victim, witnesses, and suspects
+==>Maintains perfect accuracy of the tests performed & their records
+==>Must  be Patience and willingness to work long hours
+==>Excellent writing skills to detail findings in the report
+==>Strong analytical skills to find the evidence and link it to the suspect
+==>Excellent communication skills to explain all the things
+==>Be updated with new methodologies and forensic technology
+==>Well versed in more than one computer platform (includes Windows, Macintosh, and Linux)
+==>Knowledge of various technologies, including hardware & software
+==>Develops and maintains contact with computing, networking, and investigating professionals
+==>Be honest, ethical, and law lasting
+==>Knowledge of the laws surrounding the case
+==>Ability to control emotions when dealing with issues that motivate anger
+==>Multi-discipline expertise related to both criminal and civil cases
+
+
+
+#------------------------Computer Forensics Issues-----------------------#
+
+Legal Issues:-
+-----------------------
+1. Digital evidence is criticle in nature, which makes it susceptible to changes during the course of investigation process rendering it rejectable in the court of law
+
+2. Legal system differs from one jurisdiction to the other, which makes the task of an investigator difficult as different legal systems have different rules for acquiring, preserving, investigating & presenting the digital evidence in the court
+
+3. Every legal system has a slightly different approach towards the issues related to authenticity, reliability, and completeness
+
+4. The approach of investigation differs and evolves with changes in the technology & the legal systems might not address these technological advances
+
+Privacy Issues:-
+------------------------
+1. When retrieving evidence from a particular electronic device, investigators must be cautious to avoid charges against unlawful search & seizure, i.e., they need to be in compliance with the Fourth Amendment of the U.S. Constitution
+
+2. Fourth Amendment(correction) states that the government agents may not search or seize areas or things in which a person has a reasonable expectation of privacy, without a search warrant
+
+Note: Private intrusions not acting in the color of governmental authority are exempted from the Fourth Amendment
+
+3. When dealing with the evidence related to Internet usage, investigators must protect other users’ anonymity while determining the identity of the few involved in illegal activities
+
+
+#---------------------------Code of Ethics---------------------------#
+
+Code of ethics are the principles stated to describe the expected behavior of an investigator while handling a case.
+
+Computer forensic investigator should:-
+---------------------------------------------------------
+1. Perform investigations based on well-known standard procedures
+2. Perform assigned tasks with high commitment and diligence(strugle)
+3. Act with ethical and moral principles
+4. Examine the evidence carefully within the scope of the agreement
+5. Ensure integrity of the evidence throughout the investigation process
+6. Act in accordance with federal statutes, state statutes, and local laws and policies
+7. Testify honestly before any board, court or trial proceedings
+
+
+Computer forensic investigator should not:-
+--------------------------------------------------------------
+1. Refuse any evidence because that may cause failure in the case
+2. Expose confidential matters without having any authorized permission
+3. Exceed assignments beyond his/her skills
+4. Perform actions that significantly leads to a conflict of interest
+5. Present the training, credentials, or association membership in a wrong way
+6. Provide personal or prejudiced opinions
+7. Reserve any evidence relevant to the case

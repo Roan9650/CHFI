@@ -1,0 +1,65 @@
+
+#---------------------------------------Windows Registry Forensics-----------------------------------#
+
+Registry:-
+---------------
+Database of stored configuration information about the users, hardware, and software on a Windows system.
+
+Although the registry was designed to configure the system, to do so, it tracks such a huge information about the user’s activities, the devices connected to system, what software was used & when etc. All of this can be useful for the forensic investigator in tracking the who, what, where, & when of a forensic investigation. The key is just knowing where to look for it.
+
+The registry or Windows registry is a database of information, settings, options, and other values for software and hardware installed on all versions of Microsoft Windows operating systems. When a program is installed, a new subkey is created in the registry. This subkey contains settings specific to that program, such as its location, version, and primary executable.
+
+
+Note:- 
+-----------
+As a forensic analyst, the registry can be a best place for evidence of what, where, when, and how something occurred on the system.
+
+Wireless Evidence:-
+-----------------------------
+A type of Evidence, when the Attacker was connected to which wireless AP. 
+
+
+Common Registry List:-
+-----------------------------------
+HIVES :
+Inside the registry, there are root folders. These root folders are referred to as hives. 
+
+
+Types of Registry Hives:-
+------------------------------------
+ 
+-->HKEY_USERS: -------------------Contains all the loaded user profiles
+-->HKEYCURRENT_USER: --------Profile of the currently logged-on user
+-->HKEYCLASSES_ROOT: --------Configuration information on the application used to open files
+-->HKEYCURRENT_CONFIG: ----Hardware profile of the system at startup
+-->HKEYLOCAL_MACHINE: -----Configuration information including hardware and software settings.
+
+
+Steps:-
+-----------
+
+1. Goto search, and search as “regedit.exe”
+2. Enter, or Click it.
+
+
+Wireless Evidence of Registry:-
+---------------------------------------------
+Forensic Investigator goes to following location in Registry Editor to Gather the Wireless Evidence from the System.
+
+Location:-
+----------------
+-->HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles
+
+Result:-
+------------
+Now, we can say, indeed the system was connected to AP.
+
+
+Information that can be found in the registry:-
+-------------------------------------------------------------------
+1. Users and the time they last used the system
+2. Most recently used software
+3. Any devices mounted to the system including unique identifiers of flash drives, hard drives, phones, tablets, etc.
+4. When the system connected to a specific wireless access point
+5. What and when files were accessed
+6. A list any searches done on the system
